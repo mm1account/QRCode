@@ -1,0 +1,23 @@
+server:
+  port: 8010
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.136.103.76:3306/healthqr?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+    username: root
+    password: 123456
+  application:
+    name: springboot-jwt
+
+# jwt??
+jwt:
+  header: "Authorization"     # token????
+  tokenPrefix: "Bearer "      # token??
+  secret: "qwertyuiop1214156" # ??
+  expireTime: 30*60000            # token???????????
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
